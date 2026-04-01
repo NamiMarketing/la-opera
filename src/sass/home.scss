@@ -1,0 +1,142 @@
+@use 'index' as *;
+
+.header{
+    aspect-ratio: 144/65;
+    width: 100%;
+    height: auto;
+    position: relative;
+    .header-info{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+}
+
+.detalhe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: $background2;
+    padding: 10rem 0 15rem;
+    h2{
+        font-size: 2rem;
+        line-height: 100%;
+        color: $bege;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: 5.9rem 0 2.6rem;
+    }
+    p{
+        font-size: 2rem;
+        line-height: 130%;
+        color: $bege;
+        font-weight: 400;
+        letter-spacing: 1px;
+        width: 60rem;
+        font-style: italic;
+        text-align: center;
+    }
+    h1{
+        font-size: 2.6rem;
+        line-height: 100%;
+        color: $amarelo;
+        font-weight: 400;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 12rem;
+    }
+}
+
+.palco{
+    position: relative;
+    
+    aspect-ratio: 89/26;
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+    .palco-info{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.6rem;
+        width: 100%;
+        p{
+            font-size: 2.4rem;
+            line-height: 2.6rem;
+            color: $bege;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-align: center;
+            font-style: italic;
+        }
+        .amareloButton{
+            padding: 1.6rem 6.5rem;
+        }
+    }
+}
+
+.praticidade{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12rem 0;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1440px;
+    .left-praticidade{
+        display: flex;
+        flex-direction: column;
+        gap: 4.4rem;
+        h1{
+            font-size: 3rem;
+            line-height: 3.8rem;
+            color: $roxo;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 2.2rem;
+            line-height: 2.8rem;
+            color: $roxo;
+            font-weight: 400;
+            letter-spacing: 1px;
+            width: 53rem;
+            font-style: italic;
+        }
+        .app-buttons{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            .amareloButton{
+                width: 23rem;
+                height: 5rem;
+            }
+            .end{
+                img{
+                    margin-top: -2.5px;
+                }
+            }
+        }
+    }
+}

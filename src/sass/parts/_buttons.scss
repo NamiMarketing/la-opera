@@ -1,0 +1,56 @@
+@use "./colors" as *;
+@use "./global" as *;
+
+.roxoButton {
+  background-color: $roxo;
+  color: $branco;
+  padding: 1.6rem 2.5rem;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  transition: filter 0.2s;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  z-index: 10;
+  border-radius: 25px;
+  width: fit-content;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &:hover {
+    filter: brightness(0.7);
+  }
+  @media screen and (max-width: 700px) {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    padding: 1.3rem 1.4rem 1.5rem;
+  }
+}
+.amareloButton {
+  background-color: $amarelo;
+  color: $branco;
+  padding: 1.6rem 3.2rem;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  transition: filter 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  border-radius: 25px;
+  width: fit-content;
+  cursor: pointer;
+  gap: 1rem;
+  text-transform: uppercase;
+
+  &:hover {
+    filter: brightness(0.7);
+  }
+  @media screen and (max-width: 700px) {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    padding: 1.3rem 1.4rem 1.5rem;
+  }
+}

@@ -1,0 +1,36 @@
+@use "./colors" as *;
+@use "./global" as *;
+
+.nav {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 10rem;
+  background-color: transparent;
+  top: 0;
+  z-index: 8;
+
+  ul {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      a {
+        font-size: 1.8rem;
+        line-height: 100%;
+        color: $bege;
+        letter-spacing: 0.4px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+   display: none;
+  }
+}

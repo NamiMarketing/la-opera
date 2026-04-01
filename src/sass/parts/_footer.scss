@@ -1,0 +1,152 @@
+@use "./colors" as *;
+@use "./global" as *;
+
+footer{
+display: flex;
+flex-direction: column;
+background-color: $amarelo;
+align-items: center;
+gap: 3rem;
+padding: 10rem 0 1rem;
+    .wrap-footer{
+        width: 90%;
+        max-width: 1440px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+        align-items: flex-start;
+        color: $roxo;
+        h1{
+            font-size: 3rem;
+            line-height: 4.4rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            span{
+                font-weight: 700;
+            }
+        }
+        p{
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+        .upper-footer{
+            display: flex;
+            gap: 12rem;
+            .left-upper{
+                display: flex;
+                flex-direction: column;
+                gap: 4.5rem;
+                flex: 2;
+                .info-footer{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2.5rem;
+                    .info{
+                        display: flex;
+                        align-items: center;
+                        gap: 2.4rem;
+                        .social{
+                            display: flex;
+                            gap: 1.1rem;
+                        }
+                    }
+                }
+            }
+            .right-upper{
+                display: flex;
+                flex-direction: column;
+                gap: 4rem;
+                flex: 1;
+                .icons{
+                    display: flex;
+                    gap: 5rem;
+                    flex-wrap: wrap;
+                    .first-row,.second-row{
+                        display: flex;
+                        gap: 5rem;
+                    }
+                    a{
+                        max-height: 4.5rem;
+                        max-width: 18rem;
+                        img{
+                            max-height: 4.5rem;
+                            max-width: 18rem;
+                        }
+                    }
+                }
+            }
+        }
+        .lower-footer{
+            a{
+                max-height: 18rem;
+                img{
+                    max-height: 18rem;
+                }
+            }
+        }
+    }
+    .nami{
+        font-size: 1.5rem;
+        color: $roxo;
+    }
+    @media screen and (max-width:700px) {
+        display: flex;
+        flex-direction: column;
+        background-color: $roxo;
+        align-items: center;
+        gap: 5rem;
+        padding: 6rem 0 1rem;
+            .wrap-footer{
+                color: $azul-100;
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                margin: auto;
+                gap: 4rem;
+                align-items: flex-start;
+                h2{
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                }
+                p{
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                }
+                >img{
+                    order: 3;
+                    width: 15rem;
+                }
+                .mid-footer{
+                    width: 100%;
+                    p{
+                        margin-top: 2rem;
+                    }
+                }
+                .right-footer{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2.5rem;
+                    .item-footer{
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 1.6rem;
+
+                    }
+                    h2{
+                        font-weight: 800;
+                    }
+                    img{
+                        width: 2.2rem;
+                        height: 2.2rem
+                    }
+                }
+            }
+            .nami{
+                font-size: 1.3rem;
+                color: $azul-100;
+                letter-spacing: 2%;
+            }
+    }
+}

@@ -1,0 +1,81 @@
+---
+title: La Opera - Pizzaria
+layout: "base.njk"
+cssPath: "/css/home.css"
+---
+
+
+<header class="header">
+    {% include 'nav.njk' %}
+    <img class="tablet-desktop header-back" src="../img/header.png" alt="">
+    <div class="header-info">
+        <img src="../img/header-logo.png" alt="">
+        <a href="https://loja.neemo.com.br/la-opera-pizzaria?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnUgapi1vV9JikimVkcgBFRN7EfKmgHxdgqv6OI1hmtduFbtO1anemTQ3WhCM_aem_OkgYN-vQcaATI8nJwo8LTg" class="amareloButton">Faça seu pedido</a>
+    </div>
+</header>
+
+<section class="detalhe">
+    <img src="../img/detalhe.png" alt="">
+    <h2>Cada detalhe pensado para ser inesquecível.</h2>
+    <p>Receitas italianas autênticas, ingredientes selecionados e um cuidado que transforma cada detalhe em experiência.</p>
+    <h1>Pizza napolitana de verdade, feita para chegar perfeita até você.</h1>
+</section>
+
+<section class="palco">
+    <img src="../img/palco-back.png" alt="">
+    <div class="palco-info">
+        <p>O palco dos sabores La Opera. Navegue pelo cardápio e escolha seu favorito.</p>
+        <a href="https://loja.neemo.com.br/la-opera-pizzaria?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnUgapi1vV9JikimVkcgBFRN7EfKmgHxdgqv6OI1hmtduFbtO1anemTQ3WhCM_aem_OkgYN-vQcaATI8nJwo8LTg" class="amareloButton">Cardápio</a>
+    </div>
+</section>
+
+<section class="praticidade" id="app">
+    <div class="left-praticidade">
+        <h1>
+            Praticidade, agilidade e <br/>
+            vantagens exclusivas.
+            <br/>Tudo no app La Opera.
+        </h1>
+        <p>
+            A cada 10 pedidos pelo app, você recebe R$100 em desconto para usar como quiser.
+            <br/><br/>
+            No primeiro pedido, aproveite 15% OFF com o cupom LAOPERA15.
+        </p>
+        <div class="app-buttons">
+            <a href="#" class="amareloButton">
+                Google Play
+                <img src="../img/google-play.png" alt="">
+            </a>
+            <a href="#" class="amareloButton end">
+                Apple Store
+                <img src="../img/app-store.png" alt="">
+            </a>
+        </div>
+    </div>
+    <img src="../img/praticidade.png" alt="">
+</section>
+
+{% include 'footer.njk' %}
+
+
+<script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 30,
+      slidesPerView: 'auto',
+      navigation: {
+        nextEl: ".button-next",
+        prevEl: ".button-prev"
+      },
+  
+      breakpoints: {
+        300: {
+          slidesPerView: 'auto',
+          spaceBetween: 10,
+        },
+        1000: {
+          slidesPerView: 'auto',
+        }
+      }
+    });
+
+</script>
