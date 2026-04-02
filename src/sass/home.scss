@@ -135,7 +135,7 @@
         }
     }
     @media (max-width: 768px){
-        aspect-ratio: 36/38;
+        aspect-ratio: 36/26;
         .palco-info{
             gap: 2.2rem;
             width: 32rem;
@@ -605,13 +605,13 @@
     .button-prev{
         position: absolute;
         left: 5%;
-        top: 58%;
+        top: 56%;
         cursor: pointer;
     }
     .button-next{
         position: absolute;
         right: 5%;
-        top: 58%;
+        top: 56%;
         cursor: pointer;
     }
     @media screen and (max-width: 768px) {
