@@ -90,63 +90,90 @@ footer{
         font-size: 1.5rem;
         color: $roxo;
     }
-    @media screen and (max-width:700px) {
-        display: flex;
-        flex-direction: column;
-        background-color: $roxo;
+    @media screen and (max-width:768px) {
         align-items: center;
-        gap: 5rem;
-        padding: 6rem 0 1rem;
-            .wrap-footer{
-                color: $azul-100;
+        gap: 3rem;
+        padding: 5.5rem 0 1rem;
+        .wrap-footer{
+            h1{
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+            }
+            p{
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+            }
+            .upper-footer{
                 display: flex;
                 flex-direction: column;
-                width: 90%;
-                margin: auto;
                 gap: 4rem;
-                align-items: flex-start;
-                h2{
-                    font-size: 1.6rem;
-                    line-height: 2.2rem;
-                }
-                p{
-                    font-size: 1.6rem;
-                    line-height: 2.2rem;
-                }
-                >img{
-                    order: 3;
-                    width: 15rem;
-                }
-                .mid-footer{
-                    width: 100%;
-                    p{
-                        margin-top: 2rem;
-                    }
-                }
-                .right-footer{
-                    width: 100%;
+                .left-upper{
                     display: flex;
                     flex-direction: column;
-                    gap: 2.5rem;
-                    .item-footer{
+                    gap: 3rem;
+                    .info-footer{
                         display: flex;
-                        align-items: flex-start;
-                        gap: 1.6rem;
-
+                        flex-direction: column;
+                        gap: 1.8rem;
+                        .info{
+                            display: flex;
+                            align-items: center;
+                            gap: 1.8rem;
+                            .social{
+                                display: flex;
+                                gap: 5px;
+                                a{
+                                    width: 2rem;
+                                    height: 2rem;
+                                    svg{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
                     }
-                    h2{
-                        font-weight: 800;
-                    }
-                    img{
-                        width: 2.2rem;
-                        height: 2.2rem
+                }
+                .right-upper{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2.2rem;
+                    flex: 1;
+                    .icons{
+                        display: flex;
+                        gap: 2.8rem;
+                        flex-wrap: wrap;
+                        .first-row,.second-row{
+                            display: flex;
+                            gap: 2.8rem;
+                        }
+                        a{
+                            max-height: 3.6rem;
+                            max-width: 15rem;
+                            img{
+                                max-height: 3.6rem;
+                                max-width: 15rem;
+                            }
+                            .food{
+                                max-height: 2.2rem;
+                                max-width: 9.4rem;
+                            }
+                        }
                     }
                 }
             }
-            .nami{
-                font-size: 1.3rem;
-                color: $azul-100;
-                letter-spacing: 2%;
+            .lower-footer{
+                a{
+                    max-height: 12rem;
+                    img{
+                        max-height: 12rem;
+                    }
+                }
             }
+        }
+        .nami{
+            font-size: 1.3rem;
+            letter-spacing: 2%;
+        }
     }
 }

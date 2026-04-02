@@ -15,6 +15,26 @@
         flex-direction: column;
         gap: 3rem;
         align-items: center;
+        .amareloButton{
+            box-shadow: 4px 4px 1px 0px #0000004D;
+        }
+    }
+    @media (max-width: 768px){
+        aspect-ratio: 36/38;
+        .header-info{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            align-items: center;
+            img{
+                width: 15rem;
+            }
+        }
     }
 }
 
@@ -54,11 +74,32 @@
         text-align: center;
         margin-top: 12rem;
     }
+    @media (max-width: 768px){
+        padding: 5rem 7% 7rem;
+        h2{
+            font-size: 1.5rem;
+            line-height: 2.1rem;
+            letter-spacing: 1px;
+            margin: 1.3rem 0 0rem;
+            text-align: center;
+        }
+        p{
+            font-size: 1.6rem;
+            line-height: 2.1rem;
+            letter-spacing: 0.3px;
+            width: 100%;
+        }
+        h1{
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            letter-spacing: 1px;
+            margin-top: 3rem;
+        }
+    }
 }
 
 .palco{
     position: relative;
-    
     aspect-ratio: 89/26;
     img{
         position: absolute;
@@ -91,6 +132,24 @@
         }
         .amareloButton{
             padding: 1.6rem 6.5rem;
+        }
+    }
+    @media (max-width: 768px){
+        aspect-ratio: 36/38;
+        .palco-info{
+            gap: 2.2rem;
+            width: 32rem;
+            top: 38%;
+            p{
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                letter-spacing: 0.3px;
+                text-align: center;
+                font-style: italic;
+            }
+            .amareloButton{
+                padding: 1.3rem 4.5rem;
+            }
         }
     }
 }
@@ -137,6 +196,40 @@
                     margin-top: -2.5px;
                 }
             }
+        }
+    }
+    @media (max-width: 768px){
+        flex-direction: column;
+        gap: 5rem;
+        padding: 5.5rem 0 6rem;
+        .left-praticidade{
+            gap: 2.5rem;
+            align-items: flex-start;
+            h1{
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                letter-spacing: 0.3px;
+            }
+            p{
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                letter-spacing: 0.3px;
+                width: 100%;
+            }
+            .app-buttons{
+                flex-direction: column;
+                gap: 1.3rem;
+                .amareloButton{
+                    height: 4rem;
+                    width: 17rem;
+                    img{
+                        width: 13px;
+                    }
+                }
+            }
+        }
+        >img{
+            width: 100%;
         }
     }
 }
@@ -229,11 +322,68 @@
         background: linear-gradient(270deg, #E5E4D8 0%, rgba(255, 255, 255, 0) 100%);
         z-index: 1;
     }
+    @media (max-width: 768px){
+        flex-direction: column;
+        gap: 3.7rem;
+        align-items: flex-start;
+        margin: 0 0 4rem 7%;
+        .left-conheca{
+            gap: 1.5rem;
+            align-items: flex-start;
+            .title{
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+                width: 24.5rem;
+                h1{
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    letter-spacing: 0.4px;
+                }
+                h2{
+                    font-size: 4rem;
+                    line-height: 4rem;
+                    margin-top: -8px;
+                    letter-spacing: 3px;
+                }
+            }
+            p{
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                letter-spacing: 0;
+            }
+            .arrows{
+                display: none;
+            }
+        }
+        .right-conheca{
+            width: 100%;
+            .swiper{
+                .swiper-slide{
+                    width: 15rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    cursor: grab;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    p{
+                        font-size: 1.3rem;
+                        line-height: 2rem;
+                        letter-spacing: 0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .arte{
     display: flex;
-    align-items: column;
+    flex-direction: column;
     gap: 12rem;
     background-color: $background2;
     padding: 13rem 0;
@@ -285,6 +435,101 @@
             transform: translateX(-30%);
             z-index: 2;
         }      
+    }
+    .lower-arte{
+        display: flex;
+        align-items: center;
+        width: 85%;
+        margin: 0 auto;
+        gap: 7.4rem;
+        justify-content: center;
+        .item{
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            align-items: center;
+            width: 15.7rem;
+            img{
+                max-width: 85px;
+                max-height: 80px;
+                object-fit: contain;
+            }
+            h3{
+                font-size: 1.7rem;
+                line-height: 2rem;
+                color: $amarelo;
+                font-weight: 500;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        gap: 5.5rem;
+        padding: 5rem 0 6rem;
+        .upper-arte{
+            flex-direction: column;
+            gap: 9rem;
+            .left-arte{
+                display: flex;
+                flex-direction: column;
+                gap: 3.2rem;
+                .title{
+                    display: flex;
+                    gap: 1rem;
+                    align-items: center;
+                    h1{
+                        font-size: 1.8rem;
+                        line-height: 2rem;
+                        letter-spacing: 0.5px;
+                    }
+                    h2{
+                        font-size: 3rem;
+                        line-height: 4rem;
+                        letter-spacing: 1.5px;
+                    }
+                }
+                p{
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    font-weight: 300;
+                    width: 100%;
+                }
+
+            }
+            .logo-meio{
+                width: 16.5rem;
+                position: absolute;
+                bottom: 30rem;
+                left: unset;
+                right: 0;
+                transform: translate(0, -22%);
+                z-index: 2;
+            }
+            .right-arte{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }    
+        }
+        .lower-arte{
+            flex-wrap: wrap;
+            gap: 1.6rem;
+            .item{
+                gap: 1.2rem;
+                width: 15rem;
+                img{
+                    max-width: 62px;
+                    max-height: 60px;
+                    object-fit: contain;
+                }
+                h3{
+                    font-size: 1.4rem;
+                    line-height: 1.7rem;
+                }
+            }
+        }
     }
 }
 
@@ -368,5 +613,45 @@
         right: 5%;
         top: 58%;
         cursor: pointer;
+    }
+    @media screen and (max-width: 768px) {
+        gap: 5.5rem;
+        padding: 6rem 0 6rem;
+        .title{
+            width: 100%;
+            h1{
+                font-size: 1.6rem;
+                line-height: 1.6rem;
+            }
+            h2{
+                font-size: 4rem;
+                line-height: 4rem;
+            }
+        }
+        .container{
+            width: 100%;
+            padding-bottom: 6rem;
+            .swiper2{
+                .swiper-slide{
+                    gap: 4rem;
+                    h3{
+                        font-size: 1.6rem;
+                        line-height: 1.6rem;
+                    }
+                    p{
+                        font-size: 1.6rem;
+                        line-height: 2.2rem;
+                    }
+                }
+                .swiper-pagination-bullet{
+                    width: 6px;
+                    height: 6px;
+                }
+            }
+        }
+        .button-prev,
+        .button-next{
+            display: none;
+        }
     }
 }
