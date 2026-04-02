@@ -2,14 +2,14 @@
 @use "./global" as *;
 
 footer{
-display: flex;
-flex-direction: column;
-background-color: $amarelo;
-align-items: center;
-gap: 3rem;
-padding: 10rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: $amarelo;
+    align-items: center;
+    gap: 3rem;
+    padding: 10rem 0 1rem;
     .wrap-footer{
-        width: 90%;
+        width: 85%;
         max-width: 1440px;
         margin: auto;
         display: flex;

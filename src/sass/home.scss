@@ -100,7 +100,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 12rem 0;
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     max-width: 1440px;
     .left-praticidade{
@@ -138,5 +138,235 @@
                 }
             }
         }
+    }
+}
+
+.conheca{
+    display: flex;
+    align-items: center;
+    gap: 7.5rem;
+    margin: 0 0 12rem 7%;
+    position: relative;
+    .left-conheca{
+        display: flex;
+        flex-direction: column;
+        gap: 2.2rem;
+        .title{
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            width: 34.7rem;
+            h1{
+                font-size: 3rem;
+                line-height: 3.8rem;
+                color: $roxo;
+                font-weight: 700;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+            }
+            h2{
+                font-size: 6rem;
+                line-height: 6rem;
+                color: $roxo;
+                font-weight: 400;
+                font-family: $meow;
+                align-self: flex-end;
+                margin-top: -1.6rem;
+                letter-spacing: 3px;
+            }
+        }
+        p{
+            font-size: 2rem;
+            line-height: 2.8rem;
+            color: $roxo;
+            font-weight: 400;
+            letter-spacing: 0.8px;
+            font-style: italic;
+        }
+        .arrows{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            justify-content: flex-end;
+            margin-top: 8rem;
+            .button-prev,
+            .button-next{
+                cursor: pointer;
+            }
+        }
+    }
+    .right-conheca{
+        width: 100%;
+        .swiper{
+            .swiper-slide{
+                width: 30rem;
+                display: flex;
+                flex-direction: column;
+                gap: 2.6rem;
+                cursor: grab;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                p{
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    color: $roxo;
+                    font-weight: 700;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .fog{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10vw;
+        height: 100%;
+        background: linear-gradient(270deg, #E5E4D8 0%, rgba(255, 255, 255, 0) 100%);
+        z-index: 1;
+    }
+}
+
+.arte{
+    display: flex;
+    align-items: column;
+    gap: 12rem;
+    background-color: $background2;
+    padding: 13rem 0;
+    .upper-arte{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        width: 85%;
+        margin: 0 auto;
+        .left-arte{
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            .title{
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+                h1{
+                    font-size: 3rem;
+                    line-height: 3.8rem;
+                    color: $amarelo;
+                    font-weight: 400;
+                    letter-spacing: 1.5px;
+                    text-transform: uppercase;
+                    font-style: italic;
+                }
+                h2{
+                    font-size: 6rem;
+                    line-height: 6rem;
+                    color: $amarelo;
+                    font-weight: 400;
+                    font-family: $meow;
+                    letter-spacing: 3px;
+                }
+            }
+            p{
+                font-size: 2.2rem;
+                line-height: 3rem;
+                font-weight: 300;
+                width: 53rem;
+            }
+
+        }
+        .logo-meio{
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-30%);
+            z-index: 2;
+        }      
+    }
+}
+
+.depoimentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+    padding: 12rem 0 12rem;
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    .title{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 45rem;
+        h1{
+            font-size: 2.4rem;
+            line-height: 2.4rem;
+            color: $roxo;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        h2{
+            font-size: 6rem;
+            line-height: 6rem;
+            color: $roxo;
+            font-weight: 400;
+            font-family: $meow;
+            letter-spacing: 3px;
+            align-self: flex-end;
+        }
+    }
+    .container{
+        width: 90rem;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 10rem;
+        .swiper2{
+            width: 100%;
+            height: 100%;
+            .swiper-slide{
+                display: flex;
+                flex-direction: column;
+                gap: 4rem;
+                cursor: grab;
+                h3{
+                    font-size: 2.2rem;
+                    line-height: 2.6rem;
+                    color: $roxo;
+                    font-weight: 500;
+                    text-align: center;
+                    font-style: italic;
+                }
+                p{
+                    font-size: 2.2rem;
+                    line-height: 3rem;
+                    color: $roxo;
+                    font-weight: 400;
+                    text-align: center;
+                }
+            }
+            .swiper-pagination-bullet-active{
+                background-color: $roxo;
+            }
+        }
+    }
+    .button-prev{
+        position: absolute;
+        left: 5%;
+        top: 58%;
+        cursor: pointer;
+    }
+    .button-next{
+        position: absolute;
+        right: 5%;
+        top: 58%;
+        cursor: pointer;
     }
 }
